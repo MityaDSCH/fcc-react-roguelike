@@ -4,6 +4,7 @@ import '../css/master.scss';
 // Import React and JS
 import HelloBox from './HelloBox';
 import React from 'react';
+import ReactDOM from 'react-dom';
 
 // Render!
-React.render(<HelloBox />, document.getElementsByTagName('body')[0]);
+ReactDOM.render(<HelloBox />, document.getElementById('app'));

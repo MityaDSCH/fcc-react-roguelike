@@ -1,18 +1,11 @@
 {
-  "name": "humaan-demo-webpack-react-app",
+  "name": "fcc-react-roguelike",
   "version": "1.0.0",
-  "description": "A basic environment for writing React apps in ES6 and built using webpack",
+  "description": "Free Code Camp React Roguelike",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "webpack-server": "webpack-dev-server --hot --progress --colors",
-    "web-server": "http-server -p 3000 .",
-    "start": "npm run webpack-server & npm run web-server"
+    "dev": "webpack-dev-server --devtool eval --inline --hot --progress --colors"
   },
-  "keywords": [
-    "demo"
-  ],
-  "author": "Humaan",
   "devDependencies": {
     "autoprefixer-loader": "^3.1.0",
     "babel-core": "^6.3.21",
@@ -27,6 +20,7 @@
     "node-sass": "^3.2.0",
     "postcss-loader": "^0.8.0",
     "react": "^0.14.3",
+    "react-dom": "^0.14.7",
     "react-hot-loader": "^1.2.8",
     "sass-loader": "^3.1.2",
     "source-map-loader": "^0.1.5",
