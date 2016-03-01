@@ -1,5 +1,6 @@
 import React from 'react';
 import InfoBar from './InfoBar';
+import GameContainer from './GameContainer';
 
 export default class App extends React.Component {
   constructor() {
@@ -20,6 +21,7 @@ export default class App extends React.Component {
         level={this.state.level}
         weapon={this.state.weapon}
       />
+      <GameContainer />
     </div>
   }
 }
