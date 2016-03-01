@@ -7,7 +7,6 @@ export default class InfoBar extends React.Component {
   }
 
   render() {
-
     return (
       <div id='info-container'>
         <img href="../img/repeater.jpg"></img>
@@ -16,8 +15,5 @@ export default class InfoBar extends React.Component {
         <p>Weapon:<br /> {this.props.weapon}</p>
       </div>
     )
-
   }
-
-
 }
