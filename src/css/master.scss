@@ -1,6 +1,12 @@
+@import "vars.scss";
+@import "InfoBar.scss";
+
 html {
   body {
-    font-size: 100%;
-    background: url(../img/repeater.jpg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: $min-width;
+    margin: 0;
   }
 }
