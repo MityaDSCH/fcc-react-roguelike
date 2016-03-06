@@ -1,0 +1,10 @@
+@import "vars.scss";
+
+#hero {
+  position: relative;
+  z-index: 2;
+  width: $cell-size;
+  height: $cell-size;
+
+  background-color: #0F0;
+}

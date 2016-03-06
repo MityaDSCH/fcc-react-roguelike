@@ -2,12 +2,14 @@
 
 #map {
   position: absolute;
-  width: 2000px;
-  height: 2000px;
+  top: 0;
+  left: 0;
+  width: $board-size;
+  height: $board-size;
 
   background-color: $map-color;
-  border: 5px solid $map-border-color;
+  border: $map-border-width solid $map-border-color;
   box-shadow: $map-shadow;
 
-  transform: translate(40px, 40px);
+  transform: translate(-$map-border-width, -$map-border-width);
 }

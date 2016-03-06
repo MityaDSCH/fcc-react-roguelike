@@ -7,9 +7,9 @@ export default class App extends React.Component {
     super();
 
     this.state = {
-      health: 1,
+      health: '100%',
       level: 1,
-      weapon: "Milk"
+      weapon: 'Milk'
     };
   }
 
