@@ -6,14 +6,27 @@ export default class Map extends React.Component {
 
   constructor(props) {
     super(props);
+
+    this.state = {
+      mapSide: this.props.map.mapCells*this.props.cellSize
+    }
   }
 
   render() {
+
+
     return (
-      <div id='map'>
+      <div
+        id='map'
+        style={{
+          width: this.state.mapSide,
+          height: this.state.mapSide
+        }}
+      >
         <Hero
-          x={10}
-          y={10}
+          cellSize={this.props.cellSize}
+          x={this.props.hero.x*this.props.cellSize}
+          y={this.props.hero.y*this.props.cellSize}
         />
       </div>
     )

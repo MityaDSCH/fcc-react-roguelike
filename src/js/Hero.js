@@ -10,7 +10,12 @@ export default class Hero extends React.Component {
     return (
       <div
         id='hero'
-        style={{top: this.props.y, left: this.props.x}}
+        style={{
+          top: this.props.y,
+          left: this.props.x,
+          height: this.props.cellSize,
+          width: this.props.cellSize
+        }}
       >
       </div>
     )

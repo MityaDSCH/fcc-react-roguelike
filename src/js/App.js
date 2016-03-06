@@ -7,9 +7,19 @@ export default class App extends React.Component {
     super();
 
     this.state = {
+      // Info
       health: '100%',
       level: 1,
-      weapon: 'Milk'
+      weapon: 'Milk',
+      // Map
+      map: {
+        mapCells: 50
+      },
+      cellSize: 10,
+      hero: {
+        x: 3,
+        y: 3
+      }
     };
   }
 
@@ -21,7 +31,11 @@ export default class App extends React.Component {
         level={this.state.level}
         weapon={this.state.weapon}
       />
-      <GameContainer />
+      <GameContainer
+        cellSize={this.state.cellSize}
+        map={this.state.map}
+        hero={this.state.hero}
+      />
     </div>
   }
 }
