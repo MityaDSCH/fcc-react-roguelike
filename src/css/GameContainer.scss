@@ -5,6 +5,8 @@
   height: calc(100% - #{$info-height});
   width: 100%;
 
+  overflow: hidden;
+
   background-color: #444;
 }
 

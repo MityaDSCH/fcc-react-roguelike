@@ -12,13 +12,14 @@
   justify-content: space-around;
   align-items: center;
 
-  background-color: #111120;
+  background-color: $info-bar-color;
   text-align: center;
   font-weight: 700;
   font-size: 15px;
   font-family: "Oswald", Arial;
   color: white;
-  box-shadow: 0 0 4px black;
+
+  box-shadow: $info-shadow;
 }
 
 #info-container > * {
