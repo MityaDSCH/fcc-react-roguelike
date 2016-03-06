@@ -6,8 +6,6 @@
   left: 0;
 
   background-color: $map-color;
-  border: $map-border-width solid $map-border-color;
   box-shadow: $map-shadow;
 
-  transform: translate(-$map-border-width, -$map-border-width);
 }
