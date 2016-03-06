@@ -7,34 +7,29 @@ export default class App extends React.Component {
     super();
 
     this.state = {
-      // Info
-      health: '100%',
-      level: 1,
-      weapon: 'Milk',
-      // Map
-      map: {
-        mapCells: 50
+      info: {
+        health: '100%',
+        level: 1,
+        weapon: 'Milk'
       },
-      cellSize: 10,
-      hero: {
-        x: 3,
-        y: 3
+      map: {
+        cellSize: 10,
+        mapCells: 50,
+        hero: {
+          x: 3,
+          y: 3
+        }
       }
     };
   }
 
   render() {
     return <div>
-      {/*<HelloText name="World" />*/}
       <InfoBar
-        health={this.state.health}
-        level={this.state.level}
-        weapon={this.state.weapon}
+        {...this.state.info}
       />
       <GameContainer
-        cellSize={this.state.cellSize}
-        map={this.state.map}
-        hero={this.state.hero}
+        {...this.state.map}
       />
     </div>
   }

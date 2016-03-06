@@ -12,9 +12,7 @@ export default class GameContainer extends React.Component {
     return (
       <div id='game-container'>
         <Map
-          cellSize={this.props.cellSize}
-          map={this.props.map}
-          hero={this.props.hero}
+          {...this.props}
         />
       </div>
     )
