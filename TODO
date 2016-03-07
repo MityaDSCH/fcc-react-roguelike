@@ -1,2 +1,3 @@
-[] Make Cell component to abstract Hero and Walls
+[x] Make Cell component to abstract Hero and Walls
+[] Add prop validation
 [] Make App.genWalls() make rooms

@@ -21,14 +21,20 @@ module.exports = {
         loaders: [
           'style',
           'css',
-          'autoprefixer?browsers=last 3 versions',
-          'sass?outputStyle=expanded'
+          lq('autoprefixer', {
+            browsers: 'last 3 versions'
+          }),
+          lq('sass', {
+            outputStyle: 'expanded'
+          })
         ]
       },
       {
         test: /\.(jpe?g|png|gif|svg)$/i,
         loaders: [
-          'url?limit=8192',
+          lq('url', {
+            limit: 8192
+          }),
           'img'
         ]
       },
@@ -37,7 +43,9 @@ module.exports = {
         exclude: /(node_modules|bower_components)/,
         loaders: [
           'react-hot',
-          'babel?presets[]=stage-0,presets[]=react,presets[]=es2015'
+          lq('babel', {
+            presets: ['stage-0', 'react', 'es2015']
+          })
         ]
       }
     ]
@@ -51,4 +59,8 @@ function getEntrySources(sources) {
   }
 
   return sources;
+}
+
+function lq(loader, query) {
+  return loader + '?' + JSON.stringify(query);
 }
