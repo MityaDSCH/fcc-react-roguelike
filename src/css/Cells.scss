@@ -1,0 +1,14 @@
+@import "vars.scss";
+
+.cell {
+  position: absolute;
+  z-index: 2;
+}
+
+#hero {
+  background-color: #0F0;
+}
+
+.wall {
+  background-color: #000;
+}

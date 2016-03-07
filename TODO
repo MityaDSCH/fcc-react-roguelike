@@ -1,0 +1,2 @@
+[] Make Cell component to abstract Hero and Walls
+[] Make App.genWalls() make rooms

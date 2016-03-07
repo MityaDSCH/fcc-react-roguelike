@@ -7,14 +7,16 @@ export default class Hero extends React.Component {
   }
 
   render() {
+    const size = this.props.cellSize;
     return (
       <div
         id='hero'
+        className='cell'
         style={{
-          top: this.props.y,
-          left: this.props.x,
-          height: this.props.cellSize,
-          width: this.props.cellSize
+          top: this.props.y*size,
+          left: this.props.x*size,
+          height: size,
+          width: size
         }}
       >
       </div>
