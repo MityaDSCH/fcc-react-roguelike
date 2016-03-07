@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Cell from './Cell';
+
 export default class Walls extends React.Component {
 
   constructor(props) {
@@ -10,25 +12,18 @@ export default class Walls extends React.Component {
 
     const walls = this.props.walls.map((wall) => {
       return (
-        <div
-          className='wall cell'
-          key={'wall-' + wall.x + '-' + wall.y}
-          style={{
-            width: this.props.cellSize,
-            height: this.props.cellSize,
-            top: wall.y*this.props.cellSize,
-            left: wall.x*this.props.cellSize
-          }}
-        ></div>
+        <Cell
+          class='wall'
+          key={'wall' + '-' + wall.x + '-' + wall.y}
+          cellSize={this.props.cellSize}
+          x={wall.x}
+          y={wall.y}
+        />
       );
     });
 
     return (
-      <div id='wall-container'>
-
-        {walls}
-
-      </div>
+      <div id='wall-container'>{walls}</div>
     );
   }
 }

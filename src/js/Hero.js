@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Cell from './Cell';
+
 export default class Hero extends React.Component {
 
   constructor(props) {
@@ -9,17 +11,12 @@ export default class Hero extends React.Component {
   render() {
     const size = this.props.cellSize;
     return (
-      <div
-        id='hero'
-        className='cell'
-        style={{
-          top: this.props.y*size,
-          left: this.props.x*size,
-          height: size,
-          width: size
-        }}
-      >
-      </div>
+      <Cell
+        class='hero'
+        cellSize={this.props.cellSize}
+        x={this.props.x}
+        y={this.props.y}
+      />
     )
   }
 }
